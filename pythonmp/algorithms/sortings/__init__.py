@@ -1,5 +1,4 @@
-def sort():
-    print ("Init sort() function call")
+from .sort import sort
 
 __all__ = [
     "sort"
