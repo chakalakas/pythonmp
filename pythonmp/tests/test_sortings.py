@@ -73,7 +73,6 @@ def generate_test(test, iterations, container, size, dtype):
             arr = generate_random_array(container, size, dtype)
             arr_sorted_true = sorted(arr)
 
-
             current_sort = sortings[i]
             time_start = time.time()
             arr_sorted = current_sort(arr)
