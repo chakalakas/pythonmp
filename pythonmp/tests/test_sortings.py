@@ -11,8 +11,8 @@ import numpy as np
 import pandas as pd
 from tqdm import tqdm
 
-from pythonmp import sort as pymp_sort
-sortings = [sorted, pymp_sort]
+from pythonmp import mergesort, mergesort_ins, insertionsort
+sortings = [sorted, mergesort] #, mergesort_ins, insertionsort]
 
 
 def listsEqual(l1, l2):
@@ -201,10 +201,10 @@ if __name__ == "__main__":
     test_list_int_1e4()
 
     test_list_int_1e5()
-    test_list_float_1e5()
+    # test_list_float_1e5()
 
-    test_tuple_int_1e5()
-    test_tuple_float_1e5()
+    # test_tuple_int_1e5()
+    # test_tuple_float_1e5()
 
-    test_ndarray_int_1e5()
-    test_ndarray_float_1e5()
+    # test_ndarray_int_1e5()
+    # test_ndarray_float_1e5()

@@ -1,6 +1,5 @@
 from . import sortings
-from .sortings import sort
+from .sortings import *
 
-__all__ = [
-    "sort"
-]
+__all__ = []
+__all__.extend(sortings.__all__)

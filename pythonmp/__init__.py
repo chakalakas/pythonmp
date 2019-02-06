@@ -1,6 +1,5 @@
 from . import algorithms
-from .algorithms import sort
+from .algorithms import *
 
-__all__ = [
-    "sort"
-]
+__all__ = []
+__all__.extend(algorithms.__all__)
